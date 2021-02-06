@@ -26,7 +26,7 @@ function maxTotal(num){
 
     let res = 0;
     for(let i = 1; i < triangle.length; i++){
-        for(j = 0; j <= i; j++){
+        for(let j = 0; j <= i; j++){
             if(j === 0) {
                 num[i][j] += num[i-1][j];
             } else if(j === i) {
